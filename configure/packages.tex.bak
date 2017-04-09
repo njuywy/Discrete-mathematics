@@ -1,0 +1,159 @@
+\usepackage{CJK}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsthm}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{epstopdf} % add this to support eps figures under 'pdflatex' mode
+\usepackage[bookmarksnumbered, colorlinks, CJKbookmarks]{hyperref}
+\usepackage{pdfpages}
+
+%\usepackage[lined,boxed,linesnumbered]{algorithm2e}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\usepackage{tikz}
+\usepackage{url}
+\usepackage{color}
+%\usepackage{cite}
+\usepackage{amssymb}
+\usepackage{latexsym}
+%\usepackage{subfigure}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{pbox}
+\usepackage{comment}
+\usepackage{cases}
+%\usepackage{subfloat}
+\usepackage[labelformat=simple]{subfig}
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage{framed}
+
+% these two packages are for displaying correct left quotation marks
+% by using \enquote{xxxxx} for "xxxxx" and \enquote*{xxxxx} for 'xxxxx'
+\usepackage[autostyle]{csquotes}
+
+% change page size
+\usepackage[textwidth=17cm,textheight=24cm]{geometry}
+
+\graphicspath {{figures/}}%图片所在的目录
+
+
+
+%% make subfig can use \autoref and make (a) for each subfigure
+%%% remember that \caption should come before \label
+\renewcommand\thesubfigure{(\alph{subfigure})}
+\newcommand{\subfigureautorefname}{\figureautorefname}
+
+
+%\setlength{\parskip}{0pt}
+%\setlength{\parsep}{0pt}
+%\setlength{\headsep}{0pt}
+%\setlength{\topskip}{0pt} % top to text
+%\setlength{\topmargin}{0pt} % The top margin of the page (to the header)
+%\setlength{\topsep}{0pt} % distance from title to body
+%\setlength{\partopsep}{0pt}
+
+% THEOREMS -------------------------------------------------------
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+
+% ===============================================================
+% Allow for smarter labeling of enumerations and itemizations
+% begin{inparaenum} used for within paragraghs
+\usepackage{paralist}
+% ===============================================================
+
+% ==================================
+% solve lick to figure top position
+\usepackage[all]{hypcap}
+% ==================================
+
+% =======================================
+% solve \autoref equation no (1)
+\usepackage{varioref}
+\labelformat{equation}{\textup{(#1)}}
+% =======================================
+
+% =========================================================================================================
+% \Autoref is for the beginning of the sentence
+\let\orgautoref\autoref
+\providecommand{\Autoref}
+        {\def\equationautorefname{Equation}%
+         \def\figureautorefname{Figure}%
+         \def\subfigureautorefname{Figure}%
+         \def\sectionautorefname{Section}%
+         \def\subsectionautorefname{Section}%
+         \def\subsubsectionautorefname{Section}%
+         \def\Itemautorefname{Item}%
+         \def\tableautorefname{Table}%
+         \orgautoref}
+
+% \Autorefs is plural for the beginning of the sentence
+\providecommand{\Autorefs}
+        {\def\equationautorefname{Equations}%
+         \def\figureautorefname{Figures}%
+         \def\subfigureautorefname{Figures}%
+         \def\sectionautorefname{Sections}%
+         \def\subsectionautorefname{Sections}%
+         \def\subsubsectionautorefname{Sections}%
+         \def\Itemautorefname{Items}%
+         \def\tableautorefname{Tables}%
+         \orgautoref}
+
+% \autoref is used inside a sentence
+% (this is a renew of the standard)
+\renewcommand{\autoref}
+        {\def\equationautorefname{Eq.}%
+         \def\figureautorefname{Fig.}%
+         \def\subfigureautorefname{Fig.}%
+         \def\sectionautorefname{Sect.}%
+         \def\subsectionautorefname{Sect.}%
+         \def\subsubsectionautorefname{Sect.}%
+         \def\Itemautorefname{item}%
+         \def\tableautorefname{Table}%
+         \orgautoref}
+
+% \autorefs is plural for inside a sentence
+\providecommand{\autorefs}
+        {\def\equationautorefname{Eqs.}%
+         \def\figureautorefname{Figs.}%
+         \def\subfigureautorefname{Figs.}%
+         \def\sectionautorefname{Sects.}%
+         \def\subsectionautorefname{Sects.}%
+         \def\subsubsectionautorefname{Sects.}%
+         \def\Itemautorefname{items}%
+         \def\tableautorefname{Tables}%
+         \orgautoref}
+
+\definecolor{Tomato2}{RGB}{238,92,66}
+\definecolor{yth:color:yellow}{RGB}{0,255,255}
+\definecolor{cwg:color:yellow}{RGB}{237,237,175}
+\definecolor{cwg:color:red}{RGB}{148,55,55}
+
+\usepackage{verbatim}
+\newenvironment{myverbatim}{\color{Tomato2}\verbatim}{\endverbatim}
+\newcommand{\myverb}{\color{Tomato2}\verb}
+
+\usepackage[sc]{mathpazo}
+
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+
+\usepackage{wallpaper}
+\usepackage{contour}
+
+\usepackage{tikz, ifthen}
+\usepackage{pgflibraryarrows}
+\usepackage{pgflibrarysnakes}
+% ============================================================================================================} 

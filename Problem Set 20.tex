@@ -1,0 +1,101 @@
+\documentclass[a4paper,fleqn]{article}
+
+\input{./configure/packages}
+\input{./configure/settings}
+\input{./configure/CNHead}
+\usepackage{indentfirst}
+\usepackage{multirow}
+%\setlength{\parskip}{0.0em}
+\renewcommand{\baselinestretch}{1.5} \normalsize
+
+%\usepackage{CJKutf8}
+%\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{listings}
+\setlength{\parindent}{0cm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+\title{\textbf{\fontsize{20pt}{\baselineskip}\selectfont 离散数学作业20-离散概率}}
+\date{}\maketitle
+\section*{Problem 1}
+一手扑克牌有5张，其中包含方块2和黑桃3的概率是多少？
+
+\section*{Problem 2}
+一手扑克牌有5张，其中包含一个同花顺子，即5张牌的类连续并且是同一花色的概率是多少？
+
+\section*{Problem 3}
+设$E_1$和$E_2$是两个事件，如果如果$p(E_1\cap E_2)=p(E_1)\cap p(E_2)$，就称$E_1$和$E_2$是独立的。如果把一枚硬币被抛掷3次时所有可能的结果构成一个集合，把这个集合的子集看做事件，确定下面的每一对事件是否是独立的。
+\begin{enumerate}[a)]
+\item $E_1$：第一次硬币头像向下；$E_2$；第二次硬币头像向上。
+\item $E_1$：第一次硬币头像向下；$E_2$；在连续3次中有2次但不是3次头像向上。
+\item $E_1$：第二次硬币头像向下；$E_2$；在连续3次中有2次但不是3次头像向上。
+\end{enumerate}
+
+\section*{Problem 4}
+在我们随机选择{1，2，$\ldots $，n}的一个排列时，其中$n\geq4$，这些事件的概率是什么？
+\begin{multicols}{2}
+\begin{description}
+\item a) 1在2前面。
+\item c) 2在1前面。
+\item e) 1紧挨着2前面。
+\item b) $n$在1前面并且$n-1$在2前面。
+\item d) $n$在1前面且n在2前面。
+\end{description}
+\end{multicols}
+
+\section*{Problem 5}
+要使得某个人的生日就在当天的概率大于$1/2$，求出房间里最少的人数（假设生于每一天是等可能的并且这一年有366天）。
+
+\section*{Problem 6}
+假如安随机从两个箱子中的一个箱子里选取了一个球，然后又从这个箱子里随机选取了一个球。第一个箱子里有3个橙色球和4个黑球，第二个箱子里有5个橙色球和6个黑球。如果安选出了一个橙色的球，那么该球来自第二个箱子的概率是多少？
+
+\section*{Problem 7}
+假如某诊所对病人的检测中有4\%的人感染了禽流感病毒，此外，假定对给定的禽流感血液检测，感染了禽流感的人中有97\%的人HIV检测呈阳性。那么，下列概率是多少？
+\begin{enumerate}[a)]
+\item 禽流感检测呈阳性的人真的感染了禽流感病毒。
+\item 禽流感检测呈阳性的人没有感染禽流感病毒。
+\item 禽流感检测呈阴性的人感染了禽流感病毒。
+\item 禽流感检测呈阴性的人没有感染禽流感病毒。
+\end{enumerate}
+
+\section*{Problem 8}
+Remesh可以通过3种不同的方式去工作：骑自行车、开车或坐公共汽车车。由于上班族引起的交通繁忙，他若开车上班，则有50\%的可能迟到。他若坐公共汽车上班，公共汽车可以走一条专门为公共汽车行驶的路线，那他有20\%的可能迟到。他骑车上班只有5\%的可能迟到。Remesh有一天迟到了。他的老板想估计他那天开车上班的概率。
+\begin{enumerate}[a)]
+\item 假定老板假设Remeshh以1/3的可能采用3种方法中的任何一种方法来上班。在此假设下，根据贝叶斯定理，Remesh开车来上班概率估计是多少？
+\item 假定老板知道Remesh开车的可能性有30\%，坐公共汽车上班的可能性有10\%，骑自行车的可能性有60\%。利用这些信息，根据贝叶斯定理，Remesh开车来上班的概率估计是多少？
+\end{enumerate}
+
+\section*{Problem 9}
+离散数学课程的期末考试有50道真假判断题，每道题2分；还有25道多选题，每道题4分。琳达正确回答判断题的概率是0.9，正确回答多选题的概率是0.8。她在期末考试预期的分数是多少？
+
+\section*{Problem 10}
+假设我们掷一对骰子直到其点数之和是7为止。我们掷骰子的预期次数是多少？
+
+\section*{Problem 11}
+当一个均匀的骰子被掷10次时，出现6点的次数的方差是多少？
+
+\section*{Problem 12}
+一个把信放入信袋的机器发生了故障并且随机把信放入信袋中。在一组100封信中发生下面事件的概率是多少？
+\begin{multicols}{2}
+\begin{description}
+\item a) 没有信放对了信袋。
+\item c) 恰好1封信放对了信袋。
+\item e) 恰好98封信放对了信袋。
+\item b) 恰好99封信放对了信袋。
+\item d) 所有的信都放对了信袋。
+\end{description}
+\end{multicols}
+
+\section*{Problem 13}
+假设从一副52张的扑克牌中随机选两张牌
+\begin{enumerate}[a)]
+\item 如果扑克牌同时抽取，那么两张牌都是奇数并且不是黑色的概率是多少？
+\item 如果一个扑克牌抽完之后将其放回再抽取第二张，那么两张牌都是奇数并且不是黑色的概率是多少？
+\end{enumerate}
+
+\end{CJK*}
+\end{document}
