@@ -1,0 +1,96 @@
+\documentclass[a4paper,fleqn]{article}
+
+\input{./configure/packages}
+\input{./configure/settings}
+\input{./configure/CNHead}
+\usepackage{indentfirst}
+\usepackage{multirow}
+%\setlength{\parskip}{0.0em}
+\renewcommand{\baselinestretch}{1.5} \normalsize
+
+%\usepackage{CJKutf8}
+%\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{parskip}
+\usepackage{listings}
+\setlength{\parindent}{0cm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+\title{\textbf{\fontsize{20pt}{\baselineskip}\selectfont 离散数学作业15-代数系统引论}}
+\date{}\maketitle
+\section*{Problem 1}
+设$A=\{0$，$1\}$，$S=A^A$，
+\begin{enumerate}[(1)]
+\item 试列出$S$中的所有函数。
+\item 给出$S$上合成运算的运算表。
+\end{enumerate}
+
+\section*{Problem 2}
+判断下列集合对所给的二元运算是否封闭：
+\begin{enumerate}[(1)]
+\item 整数集合$Z$和普通的减法运算。
+\item 非零整数集合$Z^*$和普通的除法运算。
+\item 全体$n\times n$实数矩阵集合$M_n(R)$和矩阵加法及乘法运算，其中$n\ge2$。
+\item 全体$n\times n$实可逆矩阵集合关于矩阵加法和乘法运算，其中$n\ge2$。
+\item 正实数集合$R^+$和$\circ$运算，其中$\circ$运算定义为：\\ \centerline{ $\forall a$，$b \in R^+$，$a\circ b=ab-a-b$}
+\item $n\in Z^+$，$nZ=\{nz|z\in Z\}$，$nZ$关于普通加法和乘法运算。
+\item $A=\{a_1$，$a_2$，... ，$a_n\}$，$n\ge 2$。$\circ$运算定义如下：\\ \centerline{$\forall a$，$b \in A$，$a\circ b=b$}
+\item $S=\{2x-1|x \in Z^+\}$关于普通加法和乘法运算。
+\item $S=\{0$，$1\}$，$S$关于普通加法和乘法运算。
+\item $S=\{x|x=2^n$，$n\in Z^+\}$，$S$关于普通的加法和乘法运算。
+\end{enumerate}
+
+\section*{Problem 3}
+$R$为实数集，定义以下$6$个函数$f_1$，$f_2$，...，$f_6$。$\forall x$，$y\in R$ 有 \\
+$f_1(<x$，$y>)=x+y$，\quad $f_2(<x$，$y>)=x-y$，\\
+$f_3(<x$，$y>)=x\cdot y$，\quad $f_4(<x$，$y>)=max(x$，$y)$，\\
+$f_5(<x$，$y>)=min(x$，$y)$，\quad $f_6(<x$，$y>)=|x-y|$
+\begin{enumerate}[(1)]
+\item 指出哪些函数是$R$上的二元运算。
+\item 对所有$R$上的二元运算说明是否为可交换、可结合、幂等的。
+\item 求所有$R$上二元运算的单位元、零元以及每一个可逆元素的逆元。
+\end{enumerate}
+
+\section*{Problem 4}
+设$S=\{1$，$2$，...，$10\}$，问下面定义的运算能否与$S$构成代数系统$<S$，$*>$?如果能构成代数系统则说明$*$运算是否满足交换律、结合律，并求$*$运算的单位元和零元。
+\begin{enumerate}[(1)]
+\item $x*y=gcd(x$，$y)$，$gcd(x$，$y)$是$x$与$y$的最大公约数。
+\item $x*y=lcm(x$，$y)$，$lcm(x$，$y)$是$x$与$y$的最小公倍数。
+\item $x*y=$大于等于$x$和$y$的最小整数。
+\item $x*y=$质数$p$的个数，其中$x\le p\le y$。
+\end{enumerate}
+
+\section*{Problem 5}
+设$S=\{f|f$是$[a$，$b]$上的连续函数$\}$，其中$a$，$b\in R$，$a\textless b$，问$S$关于下面每个运算是否构成代数系统？如果能构成代数系统，说明该运算是否适合交换律和结合律，并求出单位元和零元。
+\begin{enumerate}[(1)]
+\item 函数加法，即$(f+g)(x)=f(x)+g(x)$，$\forall x\in [a$，$b]$
+\item 函数减法，即$(f-g)(x)=f(x)-g(x)$，$\forall x\in [a$，$b]$
+\item 函数乘法，即$(f\cdot g)(x)=f(x)\cdot g(x)$，$\forall x\in [a$，$b]$
+\item 函数除法，即$(f/g)(x)=f(x)/g(x)$，$\forall x\in [a$，$b]$
+\end{enumerate}
+
+\section*{Problem 6}
+设$A=\{a$，$b\}$，试给出$A$上一个不可交换、也不可结合的二元运算。
+
+
+\section*{Problem 7}
+下面各集合都是N的子集，它们能否构成代数系统$V=<N$，$+>$的子代数：
+\begin{enumerate}[(1)]
+\item $\{x|x\in N \land x$的某次幂可以被$16$整除$\}$
+\item $\{x|x\in N \land x$与$5$互素$\}$
+\item $\{x|x\in N \land x$是$30$的因子$\}$
+\item $\{x|x\in N \land x$是$30$的倍数$\}$
+\end{enumerate}
+
+\section*{Problem 8}
+\begin{enumerate}[(1)]
+\item 证明$f(x)=x^3+3x+3$在$Q$上不可约。
+\item 设$u$是$f(x)$的一个根。以$a+bu+cu^2$形式表示$u^{-1}$和$(1+u)^{-1}$。
+\end{enumerate}
+
+\end{CJK*}
+\end{document}

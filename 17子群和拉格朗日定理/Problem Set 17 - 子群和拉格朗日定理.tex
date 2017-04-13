@@ -1,0 +1,51 @@
+\documentclass[a4paper,fleqn]{article}
+
+\input{./configure/packages}
+\input{./configure/settings}
+\input{./configure/CNHead}
+\usepackage{indentfirst}
+\usepackage{multirow}
+%\setlength{\parskip}{0.0em}
+\renewcommand{\baselinestretch}{1.5} \normalsize
+
+%\usepackage{CJKutf8}
+%\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{parskip}
+\usepackage{listings}
+\setlength{\parindent}{0cm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+\title{\textbf{\fontsize{20pt}{\baselineskip}\selectfont 离散数学作业17 - 子群和拉格朗日定理}}
+\date{}\maketitle
+\section*{Problem 1}
+设$G$为$M_n(R)$上的加法群，$n\ge 2$，判断下述子集是否构成子群。
+\begin{enumerate}[(1)]
+\item 全体对称矩阵。
+\item 全体对角矩阵。
+\item 全体行列式大于等于$0$的矩阵。
+\item 全体上（下）三角矩阵。
+\end{enumerate}
+
+\section*{Problem 2}
+设$G$为群，$a$是$G$中给定元素，$a$的正规化子$N(a)$表示$G$中与$a$可交换的元素构成的集合，即\\
+\centerline{ $N(a)=\{x|x\in G \land xa=ax\}$ }\\
+证明$N(a)$是$G$的子群。
+
+\section*{Problem 3}
+设$H$是群$G$的子群，$x\in G$，令\\
+\centerline{ $xHx^{-1}=\{xhx^{-1}|h\in H\}$ } \\
+证明$xHx^{-1}$是$G$的子群，称为$H$的共轭子群。
+
+\section*{Problem 4}
+设$H$和$K$分别为群$G$的$r$，$s$阶子群，若$r$和$S$互素，证明$H\cap K=\{e\}$。
+
+\section*{Problem 5}
+
+
+\end{CJK*}
+\end{document}

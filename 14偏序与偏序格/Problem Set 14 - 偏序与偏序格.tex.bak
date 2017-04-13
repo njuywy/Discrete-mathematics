@@ -1,0 +1,50 @@
+\documentclass[a4paper,fleqn]{article}
+
+\input{./configure/packages}
+\input{./configure/settings}
+\input{./configure/CNHead}
+\usepackage{indentfirst}
+\usepackage{multirow}
+%\setlength{\parskip}{0.0em}
+\renewcommand{\baselinestretch}{1.5} \normalsize
+
+%\usepackage{CJKutf8}
+%\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{parskip}
+\usepackage{listings}
+\setlength{\parindent}{0cm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+\title{\textbf{\fontsize{20pt}{\baselineskip}\selectfont 离散数学作业15 - 偏序与偏序格}}
+\date{}\maketitle
+\section*{Problem 1}
+$S$的幂集上的偏序$\{(A,B)|A\subseteq B\}$的覆盖关系是什么？其中$S=\{a,b,c\}$。
+
+\section*{Problem 2}
+证明：一个有穷偏序集可以从它的覆盖关系重新构造出来。【提示：证明偏序集是它的覆盖关系的自反传递闭包。】
+
+\section*{Problem 3}
+确定具有下面哈赛图的偏序集是否为格。
+
+\includegraphics[width=3.0in,height=1.5in]{3.jpg}
+
+
+\section*{Problem 4}
+证明：一个格的每个有限非空子集有最小上界和最大下界。
+
+\section*{Problem 5}
+证明：每个有限格都有一个最小元素和最大元素。
+
+\section*{Problem 6}
+证明：一个有穷非空偏序集有一个极大元素。
+
+\section*{Problem 7}
+设$A$是$2\times2$的布尔矩阵集合，$A$上的关系$R$满足$\textbf{M}R\textbf{N}$当且仅当$m_{ij}\le n_{ij}$，$1\le i\le 2$，$1\le j\le 2$。$(A,R)$是格吗？试证明之。$(m_{ij}$为布尔矩阵$M$的元素，$n_{ij}$为布尔矩阵$N$的元素，$\le$表示数值上的小于等于。$)$
+
+\end{CJK*}
+\end{document}

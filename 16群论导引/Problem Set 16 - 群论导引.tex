@@ -1,0 +1,75 @@
+\documentclass[a4paper,fleqn]{article}
+
+\input{./configure/packages}
+\input{./configure/settings}
+\input{./configure/CNHead}
+\usepackage{indentfirst}
+\usepackage{multirow}
+%\setlength{\parskip}{0.0em}
+\renewcommand{\baselinestretch}{1.5} \normalsize
+
+%\usepackage{CJKutf8}
+%\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{parskip}
+\usepackage{listings}
+\setlength{\parindent}{0cm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+\title{\textbf{\fontsize{20pt}{\baselineskip}\selectfont 离散数学作业16 - 群论引导}}
+\date{}\maketitle
+\section*{Problem 1}
+判断下列集合关于指定的运算是否构成半群，独异点和群：
+\begin{enumerate}[(1)]
+\item $a$是正实数，$G=\{a^n|n\in Z\}$，运算是普通乘法。
+\item $Q^+$为正有理数，运算是普通乘法。
+\item $Q^+$为正有理数，运算是普通加法。
+\item 一元实系数多项式的集合关于多项式的加法。
+\item 一元实系数多项式的集合关于多项式的乘法。
+\item $U_n=\{x|x\in C \land x^n=1\}$，$n$为某个给定正整数，$C$为复数集合，运算是复数乘法。
+\end{enumerate}
+
+\section*{Problem 2}
+$S=\{a$，$b$，$c\}$，$*$是$S$上的二元运算，且$\forall x$，$y\in S$，$x*y=x$。
+\begin{enumerate}[(1)]
+\item 证明$S$关于$*$运算构成半群。
+\item 试通过增加最少的元素使得$S$扩张成一个独异点。
+\end{enumerate}
+
+\section*{Problem 3}
+设$V=<\{a$，$b\}$，$*>$是半群，且$a*a=b$，证明：
+\begin{enumerate}[(1)]
+\item $a*b=b*a$
+\item $b*b=b$
+\end{enumerate}
+
+\section*{Problem 4}
+设$G=\{
+\begin{bmatrix} 1 & 0 \\ 0 &  1 \end{bmatrix}$，
+$\begin{bmatrix} 1 & 0 \\ 0 &  -1 \end{bmatrix}$，
+$\begin{bmatrix} -1 & 0 \\ 0 &  1 \end{bmatrix}$，
+$\begin{bmatrix} -1 & 0 \\ 0 &  -1 \end{bmatrix}
+\}$，证明$G$关于矩阵乘法构成一个群。
+
+\section*{Problem 5}
+设$G$为群，证明$e$为$G$中惟一的幂等元。
+
+\section*{Problem 6}
+设$G$为群，$a$，$b$，$c\in C$，证明：\\
+$|abc|=|bca|=|cab|$
+
+\section*{Problem 7}
+证明偶数阶群必含$2$阶元。
+
+\section*{Problem 8}
+设$G$为非$Abel$群，证明$G$中存在非单元$a$和$b$，$a\not= b$，且$ab=ba$。
+
+\section*{Problem 9}
+设$i=\sqrt{-1}$，证明$S=\{1$，$-1$，$i$，$-i\}$是复数上的乘法群。
+
+\end{CJK*}
+\end{document}
