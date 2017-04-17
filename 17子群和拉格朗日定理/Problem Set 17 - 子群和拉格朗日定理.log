@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.3.7)  13 APR 2017 14:54
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2017.3.7)  17 APR 2017 21:19
 entering extended mode
 **G:/离散数学2017/Discrete*Maths*Problem*13-17/17子群和拉格朗日定�
 �/Problem*Set*17*-*子群和拉格朗日定理.tex
@@ -1226,11 +1226,11 @@ Package rerunfilecheck Info: File `Problem*Set*17*-*子群和拉格朗日定理
 (rerunfilecheck)             Checksum: <no file>.
  ) 
 Here is how much of TeX's memory you used:
- 23658 strings out of 495354
- 391508 string characters out of 3183860
- 492239 words of memory out of 3000000
- 26251 multiletter control sequences out of 15000+200000
- 50697 words of font info for 123 fonts, out of 3000000 for 9000
+ 23668 strings out of 495354
+ 391712 string characters out of 3183860
+ 493239 words of memory out of 3000000
+ 26261 multiletter control sequences out of 15000+200000
+ 50995 words of font info for 124 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  58i,6n,55p,941b,661s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><C:/CTEX/CTeX/fonts/truetype/
@@ -1257,7 +1257,7 @@ c/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C
 :/CTEX/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb><C:/CTEX/MiKTeX/fonts/type1/
 urw/times/utmb8a.pfb><C:/CTEX/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
 Output written on "Problem Set 17 - 子群和拉格朗日定理.pdf" (2 pages, 
-207962 bytes).
+211067 bytes).
 PDF statistics:
  174 PDF objects out of 1000 (max. 8388607)
  12 named destinations out of 1000 (max. 500000)
