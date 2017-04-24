@@ -49,10 +49,10 @@ $S=\{a$，$b$，$c\}$，$*$是$S$上的二元运算，且$\forall x$，$y\in S$，$x*y=x$。
 
 \section*{Problem 4}
 设$G=\{
-\begin{bmatrix} 1 & 0 \\ 0 &  1 \end{bmatrix},
-\begin{bmatrix} 1 & 0 \\ 0 &  -1 \end{bmatrix},
-\begin{bmatrix} -1 & 0 \\ 0 &  1 \end{bmatrix},
-\begin{bmatrix} -1 & 0 \\ 0 &  -1 \end{bmatrix}
+\begin{bmatrix} 1 & 0 \\ 0 &  1 \end{bmatrix}$，
+$\begin{bmatrix} 1 & 0 \\ 0 &  -1 \end{bmatrix}$，
+$\begin{bmatrix} -1 & 0 \\ 0 &  1 \end{bmatrix}$，
+$\begin{bmatrix} -1 & 0 \\ 0 &  -1 \end{bmatrix}
 \}$，证明$G$关于矩阵乘法构成一个群。
 
 \section*{Problem 5}
