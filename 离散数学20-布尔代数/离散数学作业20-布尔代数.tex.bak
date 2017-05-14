@@ -1,0 +1,72 @@
+\documentclass[a4paper,fleqn]{article}
+
+\input{./configure/packages}
+\input{./configure/settings}
+\input{./configure/CNHead}
+\usepackage{indentfirst}
+\usepackage{multirow}
+%\setlength{\parskip}{0.0em}
+\renewcommand{\baselinestretch}{1.5} \normalsize
+
+%\usepackage{CJKutf8}
+%\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{listings}
+\usepackage{extarrows}
+\setlength{\parindent}{0cm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+\title{\textbf{\fontsize{20pt}{\baselineskip}\selectfont 离散数学作业20-布尔代数}}
+\date{}\maketitle
+
+\section*{习题 1}
+设$B$是布尔代数，$\forall 1$
+
+
+\section*{习题 2}
+下列各集合对于整除关系都构成偏序集，判断哪些偏序集是格.
+\begin{enumerate}[a)]
+\item $L=\{1,2,3,4,5\}$;
+\item $L=\{1,2,3,6,12\}$;
+\item $L=\{1,2,3,4,6,9,12,18,36\}$;
+\item $L=\{1,2,2^2,...\}$.
+\end{enumerate}
+
+\section*{习题 3}
+设$L$是格，求以下公式的对偶式：
+\begin{enumerate}[a)]
+\item $a\land(a\lor b)\preceq a$;
+\item $a\lor (b\land c)\preceq (a\lor b)\land(a\lor c)$;
+\item $b\lor(c\land a)\preceq (b\lor c)\land a$.
+\end{enumerate}
+
+\section*{习题4}
+设$L$是格，$a,b,c\in L$,且$a\preceq b\preceq c$，证明：$a\lor b=b\land c$.
+
+\section*{习题5}
+针对下图所给的格$L_1$，求出$L_1$的所有子格.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.2\textwidth]{figure2.jpg}
+  \caption{}\label{fig:digit}
+\end{figure}
+
+
+\section*{习题6}
+针对习题1中的每个格，如果格中的元素存在补元，则求出这些补元.
+
+\section*{习题7}
+说明习题1中的每个格是否为分配格、有补格和布尔格，并说明理由.
+
+\section*{习题8}
+设$\langle L,\land,\lor,0,1\rangle$是有界格，证明$ \forall a\in L$，有$a\land0=0,a\lor0=a,a\land1=a,a\lor1=1$.
+
+\section*{习题9}
+如果$S$是群$G$的子集，则S所生成的子群$\langle S\rangle$是包含所有$S$的元素的$G$的最小子群。这意味着它是包含$S$元素的所有子群的交集。等价的说$\langle S\rangle$是可以用$S$的元素和它们的逆元中的有限多个元素的乘积表达的$G$的所有元素的子群。设$G$是一个群,$L(G)$是$G$的所有子群的集合。在$L(G)$上定义偏序关系$\leq$为集合包含关系$\subseteq$。 对于任意的$A,B\in L(G)$,定义$A\land B \xlongequal{def}\langle A \cap B\rangle$，$A\lor B \xlongequal{def}\langle A \cup B\rangle$，试证明：$\langle L(G),\lor,\land\rangle$是一个代数格，$\langle L(G),\le\rangle$是一个偏序格，且二者同一。
+
+\end{CJK*}
+\end{document}

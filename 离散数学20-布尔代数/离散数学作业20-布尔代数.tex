@@ -1,0 +1,56 @@
+\documentclass[a4paper,fleqn]{article}
+
+\input{./configure/packages}
+\input{./configure/settings}
+\input{./configure/CNHead}
+\usepackage{indentfirst}
+\usepackage{multirow}
+%\setlength{\parskip}{0.0em}
+\renewcommand{\baselinestretch}{1.5} \normalsize
+
+%\usepackage{CJKutf8}
+%\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{listings}
+\usepackage{extarrows}
+\setlength{\parindent}{0cm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+\title{\textbf{\fontsize{20pt}{\baselineskip}\selectfont 离散数学作业20-布尔代数}}
+\date{}\maketitle
+
+\section*{习题 1}
+设$\ B\ $是布尔代数，$\ B\ $中的表达式$\ f\ $是：$(a\land b)\lor(a \land b \land c)\lor(b \land c)$
+\begin{enumerate}[a)]
+\item 化简$\ f\ $；
+\item 求$\ f\ $的对偶式$\ f^*$。
+\end{enumerate}
+
+\section*{习题 2}
+设$\ B\ $是布尔代数，$\forall a,b \in B$，证明$\ a \preceq b \Longleftrightarrow a \land b' =0 \Longleftrightarrow a' \lor b = 1$。
+
+\section*{习题 3}
+设$\langle B,\land,\lor,\ ' ,0,1\rangle$是布尔代数，在$\ B\ $上定义二元运算$\oplus$，$\forall x,y\in B\ $有$\ x
+\oplus y=(x \land y')\lor(x' \land  y)$，问$\langle B,\oplus \rangle$是否能构成代数系统？如果能，指出是哪一种代数系统，并说明理由。
+
+\section*{习题4}
+设$\ B\ $是布尔代数，$\forall a,b,c\in B$，若$a \preceq c$，则有$a\lor (b\land c)=(a\lor b)\land c$，称这个等式为模律，证明布尔代数适合模律。
+
+
+
+\section*{习题5}
+设$\ B\ $是布尔代数，$\ a_1,a_2,...,a_n \in B$，证明：
+\begin{enumerate}[a)]
+\item $(a_1 \lor a_2 \lor...\lor a_n)'=a_1' \land a_2' \land ... \land a_n'$;
+\item $(a_1 \land a_2 \land...\land a_n)'=a_1' \lor a_2' \lor ... \lor a_n'$.
+\end{enumerate}
+
+\section*{习题6}
+设$\ B_1,B_2,B_3\ $是布尔代数，证明：若$\ B_1 \cong B_2,B_2 \cong B_3\ $,则$\ B_1 \cong B_3$。
+
+\end{CJK*}
+\end{document}
