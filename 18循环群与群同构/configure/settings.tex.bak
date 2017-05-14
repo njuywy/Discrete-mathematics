@@ -1,0 +1,10 @@
+\color{cwg:color:red}
+%\color{white}
+%\pagecolor{cwg:color:yellow}
+%\color{cwg:color:yellow}
+\hypersetup{linkcolor=magenta, urlcolor=blue, citecolor=blue, pdfstartview={FitH}, hyperfootnotes=false, unicode=true}
+\renewcommand{\algorithmicrequire}{\textbf{Inputs:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\linespread{1.05}         % Palatino needs more leading (space between lines) \contourlength{1pt}
+\contournumber{1}
+%\TileSquareWallPaper{4}{../figures/osxlion}

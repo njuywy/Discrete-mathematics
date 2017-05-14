@@ -1,0 +1,58 @@
+\documentclass[a4paper,fleqn]{article}
+
+\input{./configure/packages}
+\input{./configure/settings}
+\input{./configure/CNHead}
+\usepackage{indentfirst}
+\usepackage{multirow}
+%\setlength{\parskip}{0.0em}
+\renewcommand{\baselinestretch}{1.5} \normalsize
+
+%\usepackage{CJKutf8}
+%\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{listings}
+\setlength{\parindent}{0cm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{multicol}
+\begin{document}
+\begin{CJK*}{GBK}{song}
+\title{\textbf{\fontsize{20pt}{\baselineskip}\selectfont 离散数学作业18-循环群与群同构}}
+\date{}\maketitle
+
+\section*{习题 1}
+对于下各小题给定的群$G_1$和$G_2$，以及$f:G_1 \rightarrow G_2$,说明$f$是否为群$G_1$ 到$G_2$的同态，如果是，说明是否为单同态、满同态和同构，求同态像$f(G_1)$
+\begin{enumerate}[a)]
+\item
+$G_1=\langle Z,+\rangle,G_2=\langle R^*,\cdot \rangle$,其中$R^*$为非零实数集，$+$和$\cdot$分别表示数的加法和乘法
+\[f:Z\rightarrow R^*,f(x)=\begin{cases}
+1&\text{$x$ 是偶数}\\
+-1&\text{$x$ 是奇数}
+\end{cases}\]
+\item
+$G_1=\langle Z,+\rangle,G_2=\langle A,\cdot \rangle$,其中$+$和$\cdot$表示数的加法和乘法,$A=\{x|x\in C \bigwedge |x|=1\}$,其中C为复数集合\\
+$f:Z\rightarrow A,f(x)=\cos x+i\sin x$
+
+
+\end{enumerate}
+
+\section*{习题 2}
+证明循环群一定是阿贝尔群，说明阿贝尔群是否一定是循环群，并证明你的结论.
+
+\section*{习题 3}
+设$G_1$为循环群，$f$是群$G_1$到$G_2$的同态，证明$f(G_1)$也是循环群.
+
+\section*{习题4}
+设$G=\langle a \rangle$是15阶循环群
+\begin{enumerate}[a)]
+\item 求出G的所有生成元.
+\item 求出G的所有子群.
+\end{enumerate}
+
+\section*{习题5}
+试证明：三阶群必为循环群.
+
+\end{CJK*}
+\end{document}
